@@ -18,7 +18,7 @@ public class RollDie {
    * Required javadoc.
   */
   
-  // declare variable 
+  // declare variables
   static int maxValue;
   static int minValue;
   
@@ -29,14 +29,14 @@ public class RollDie {
   public static void main(String[] args) {
     
     // Call procedure
-    procedure(minValue, maxValue);
+    FindRanNum(minValue, maxValue);
   }
   
   /**
    * Required javadoc.
   */
   
-  public static void procedure(int minValue, int maxValue) { 
+  public static void FindRanNum(int minValue, int maxValue) { 
     
     // allow user to input
     Scanner userMinInput = new Scanner(System.in);
@@ -61,7 +61,6 @@ public class RollDie {
 
     // generate random numbers between 1 - 6
     //int random = randomNum.next(minValue, maxValue);
-    
     int random = (int) (Math.random() * ((maxValue - minValue) + 1)) + minValue;
     
     // display the random number
